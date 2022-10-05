@@ -1,0 +1,297 @@
+about	null
+#above added newly: for this patient, for patient, for concept
+#above added newly: from the location
+#above newly added
+#above newly added : how is not null in a single case out of 6
+#added above newly
+#added above newly
+#added above newly
+#added above newly
+#added above newly
+#added above newly
+#added above newly
+#added above newly
+#added above newly
+#added above newly
+#added above newly
+#added above newly
+#added above newly
+#added above newly been--> null or this one is good check
+#added above newly: case(hours-10, during-8) its better to give such relation
+#added above newly: given has only two occurance
+# added above newly: "how many" and "many times" were there but due to overlap, removed removing the "many times" advmod(many-2, How-1), amod(times-3, many-2) head mismatch so cant keep all three together
+#added above newly: it is giving compound in online but this parser gave nn
+#added above newly not sure about the rule
+#added above newly not sure about the rule
+#added above newly: not sure about the rule.
+#added above newly: there are in timeref/ in the timeref/ in the concept/in concept/in location
+#added above newly "we know" 5 times and "we" 6 times (we started)
+administered(nsubjpass:__concept__)	lambda.concept
+__admission__	lambda.concept/null
+after	after
+amount(amod:large)	is_large
+an	null
+a	null
+any	null/delta
+anything	null
+applied(nsubjpass:__concept__)	lambda.concept
+#area(det:the)	location
+are(advmod:how)	latest
+area	location
+are	delta/latest/null
+#been(aux:has)	null
+been(dobj:what, aux:have)	latest
+been	null
+begin	null
+being	null
+best	max
+by	null
+call	lambda.hascall
+# check why not working
+closed	is_healed
+come	null/lambda.concept
+comfortable	null
+comfortably	null
+__concept__(advmod:around)	lambda.concept
+__concept__(advmod:on)	lambda.concept
+__concept__(advmod:still)	lambda.concept
+__concept__(amod:current)	lambda.concept
+__concept__(amod:more)	lambda.concept
+__concept__(amod:ongoing)	lambda.concept
+__concept__(amod:overall)	lambda.concept
+__concept__(amod:particular)	lambda.concept
+__concept__(amod:regular)	lambda.concept
+__concept__(auxpass:been)	lambda.concept
+__concept__(cop:been)	lambda.concept
+__concept__(det:a)	lambda.concept
+__concept__(det:an)	lambda.concept
+__concept__(det:any)	lambda.concept
+__concept__	lambda.concept
+__concept__(vmod:performed)	lambda.concept
+confirmed	null
+confirm	null
+contrast	is_positive
+date(compound:decision)	time
+#date(nn:decision)	time
+date	time
+day(compound:decision)	time
+#day(nn:decision)	time
+decision	null
+description	null
+#det(time, what)	time
+did(aux:how)	latest
+did	delta/null/latest
+__discharge__	lambda.concept
+do	delta/null
+does(advmod:how)	latest
+does(aux:how)	latest
+#does	delta/latest/null
+does	delta/null
+doing	null
+done(aux:have)	delta
+done(nsubjpass:__concept__)	lambda.concept
+dose	dose
+dropped(aux:has)	is_decreasing
+during	null
+early	time
+ever	null
+exceed(dobj:__measurement__)	greater_than
+exceed(obj:__measurement__)	greater_than
+#exceed	greater_than
+#fall(prep:below)	less_than
+fall(obl:__measurement__(case:below))	less_than
+fall(prep:below(pobj:__measurement__))	less_than
+#family(amod:coming)	lambda.concept
+family	is_relative
+#family	lambda.concept
+fed	null
+find	null
+first	earliest
+fluid	null
+for	null
+found	null
+from	null
+further	null
+get	null
+given(aux:has, auxpass:been)	delta
+given	null/is_positive
+give	null
+#goal	null
+#greater(prep:than)	greater_than
+greater(prep:than(pobj:__measurement__))	greater_than
+greater(obl:__measurement__(case:than))	greater_than
+grow(advmod:ever)	is_positive
+grown	is_positive/null
+had(aux:has)	delta/null
+happening	null
+has(aux:do)	delta
+has	delta/latest/null
+have(aux:did)	delta/null
+have	delta/null
+have(dep:does)	delta
+having(dobj:__concept__)	lambda.concept
+been(dep:high(advmod:how))	max
+highest	max
+high	is_high
+how	latest/earliest/null
+indication	reason
+initial	earliest
+initiated	null
+in	null
+inserted	null
+is(advmod:how)	latest/null
+is	delta/latest/null
+is(dep:high(advmod:how))	latest
+is(expl:there)	delta
+issue(amod:main)	is_primary
+kind	null
+know	null
+last	latest
+latest	latest
+left	null
+#level(compound:__concept__)	lambda.concept
+level(nmod:__concept__)	lambda.concept
+level(nn:__concept__)	lambda.concept
+level(nn:goal)	null
+levels(det:the, amod:__concept__)	lambda.concept
+levels(compound:__concept__)	lambda.concept
+levels(nn:__concept__)	lambda.concept
+located(advmod:where)	location
+location	location
+__location_ref__	location/at_location
+long	duration
+long(advmod:how)	duration
+low(advmod:how)	min
+lowest	min
+make	is_positive
+many(advmod:how)	count/sum
+#__measurement__	null
+more	null
+much(advmod:how)	sum/latest
+much	null/is_large
+#need modification
+#need modification
+neurology	is_doctor
+notes	null
+#nsubj(what, time)	time
+of	null
+often(advmod:how)	count/frequency
+ok	is_normal
+old	duration
+on	null
+open	null
+out	null
+particular	null
+pass(dobj:zone(amod:__measurement__))	greater_than
+pass(obj:zone(amod:__measurement__))	greater_than
+#pass	greater_than
+__patient__(amod:new)	null
+__patient__(case:for)	null
+#__patient__(case:'s)	null
+#__patient__(det:the)	null
+#__patient__(det:this)	null
+__patient__	null
+__patient__(cop:is)	latest
+positive	is_positive
+__postoperative__	time_within
+__preoperative__	time_within
+post	before/after
+#__preoperative__	time_within/lambda.concept
+present(nsubj:__concept__)	lambda.concept
+problems(amod:more)	is_problem
+produced	is_positive
+properly	is_normal
+proposed	null
+reaction	is_response
+__readmission__	lambda.concept
+received(dobj:__concept__)	lambda.concept
+received	null
+receive	null
+recent(advmod:most)	latest
+recently(advmod:most)	latest
+relatives	lambda.hasrelative
+remove	null
+#removing unused lexicons
+respond	is_treatment
+#response(nmod:__concept__)	lambda.concept
+response	null
+result(compound:__concept__)	lambda.concept
+result	null
+resume	null
+#returned	null
+risen	is_increasing
+sealed("compound:prt":off)	is_healed
+sealed(prt:off)	is_healed
+seen	null
+serious	is_serious
+#serious	severe/null
+#showed	null
+showed	null
+#show	null
+show	null
+significant	is_significant
+since	latest/null
+#'s	null
+__staff__	null
+started(auxpass:were)	earliest
+started("aux:pass":were)	earliest
+started(tmod:__time_unit__)	earliest
+started	null
+status	null
+still	null
+stopped(auxpass:were)	latest
+stopped("aux:pass":were)	latest
+summary(det:the)	summary
+summary	summary
+suspected	null
+suspect	null
+#team	null
+__temporal_ref__	time_within
+the	null
+there	null
+this	null
+time(compound:decision)	time
+#times(amod:many)	count
+times	null
+time	time
+is(nsubj:time, advmod:when)	time
+__time_unit__(amod:many(advmod:how))	duration
+__time_unit__(det:what)	time
+titrated	null
+#tolerating	is_result
+to	null
+total	sum
+treat	is_treatment
+trend	trend
+type	null
+use(aux:did)	delta
+used	null
+volume(amod:total)	sum
+volume	sum
+#ward	at_location
+was(advmod:how)	latest/null
+was(advmod:when)	time/null
+was	delta/latest/null
+was(expl:there)	delta
+we	null
+were	null/delta
+#what(cop:are)	latest/null
+what(cop:is)	latest/null
+what(cop:was)	latest/null
+#what(cop:were)	latest/null
+what	latest/null
+what(nsubj:time)	time
+when	time
+where	location/null
+whether	delta
+who(cop:is)	latest
+#who	latest/null
+with	null
+with(pobj:__patient__)	null
+written	null
+yet	null
+#zone	null
+__measurement__(advmod:greater, advmod:than)	greater_than
+__measurement__(quantmod:than(mwe:greater))	greater_than
+negative	is_negative
+,	null

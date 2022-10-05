@@ -1,0 +1,200 @@
+{
+  "regex": {
+    "REGEXNUMERIC": "(\\d+(?:\\d+)?)",
+    "REGEXNUMERICWITHTEMP": "(\\d+(?:\\.\\d+)?)(C|F)",
+    "REGEXUNITWHOLE": "(C|F|kg|mg)",
+    "REGEXUNITFIRST": "(kg|mg|mmol)",
+    "REGEXUNITSECOND": "(m2|dl|ml|L)",
+    "REGEXYEAR": "(\\d\\d\\d\\d)",
+    "REGEXMONTH": "(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
+  },
+  "references": [
+    {
+      "type": "patient",
+      "patterns": [
+        "a patient",
+        "a patient's",
+        "he",
+        "he's",
+        "her",
+        "her's",
+        "him",
+        "him's",
+        "his",
+        "his's",
+        "patient",
+        "patient's",
+        "she",
+        "she's",
+        "the patient",
+        "the patient's",
+        "the patients",
+        "the patients's",
+        "them",
+        "them's",
+        "they",
+        "they's",
+        "this patient",
+        "this patient's"
+      ]
+    },
+    {
+      "type": "time_unit",
+      "patterns": [
+        "days",
+        "day",
+        "year",
+        "years",
+        "day and time",
+        "time and day"
+      ]
+    },
+    {
+      "type": "temporal_ref",
+      "patterns": [
+        "after REGEXMONTH REGEXYEAR",
+        "after REGEXYEAR",
+        "in REGEXMONTH REGEXYEAR",
+        "in REGEXYEAR",
+        "in the last decade",
+        "in the last night",
+        "in the last REGEXNUMERIC decades",
+        "in the last REGEXNUMERIC hour",
+        "in the last REGEXNUMERIC hours",
+        "in the last REGEXNUMERIC year",
+        "in the last REGEXNUMERIC years",
+        "in the last week",
+        "in the last year",
+        "in the past REGEXNUMERIC decades",
+        "in the past REGEXNUMERIC hour",
+        "in the past REGEXNUMERIC hours",
+        "in the past REGEXNUMERIC year",
+        "in the past REGEXNUMERIC years",
+        "in the previous REGEXNUMERIC years",
+        "in the past week",
+        "in the past year",
+        "last decade",
+        "last night",
+        "last REGEXNUMERIC decades",
+        "last REGEXNUMERIC hour",
+        "last REGEXNUMERIC hours",
+        "last REGEXNUMERIC year",
+        "last REGEXNUMERIC years",
+        "last week",
+        "overnight",
+        "past REGEXNUMERIC decades",
+        "past REGEXNUMERIC hour",
+        "past REGEXNUMERIC hours",
+        "past REGEXNUMERIC year",
+        "past REGEXNUMERIC years",
+        "REGEXNUMERIC decades",
+        "REGEXNUMERIC hour",
+        "REGEXNUMERIC hours",
+        "REGEXNUMERIC year",
+        "REGEXNUMERIC years",
+        "since last night",
+        "since REGEXYEAR",
+        "since today",
+        "since last decade",
+        "the last decade",
+        "the last night",
+        "the last REGEXNUMERIC decades",
+        "the last REGEXNUMERIC hour",
+        "the last REGEXNUMERIC hours",
+        "the last REGEXNUMERIC year",
+        "the last REGEXNUMERIC years",
+        "the last week",
+        "the last year",
+        "last year",
+        "the past REGEXNUMERIC decades",
+        "the past REGEXNUMERIC hour",
+        "the past REGEXNUMERIC hours",
+        "the past REGEXNUMERIC year",
+        "the past REGEXNUMERIC years",
+        "the past week",
+        "the past year",
+        "this morning",
+        "this year",
+        "today",
+        "yesterday"
+      ]
+    },
+    {
+      "type": "measurement",
+      "patterns": [
+        "REGEXNUMERIC",
+        "REGEXNUMERIC.REGEXNUMERIC",
+        "REGEXNUMERIC%",
+        "REGEXNUMERIC.REGEXNUMERIC%",
+        "REGEXNUMERICWITHTEMP",
+        "REGEXNUMERIC REGEXUNITWHOLE",
+        "REGEXNUMERIC.REGEXNUMERIC REGEXUNITWHOLE",
+        "REGEXNUMERIC REGEXUNITFIRST/REGEXUNITSECOND",
+        "REGEXNUMERIC.REGEXNUMERIC REGEXUNITFIRST/REGEXUNITSECOND"
+      ]
+    },
+    {
+      "type": "preoperative",
+      "patterns": [
+        "preoperative",
+        "pre-op"
+      ]
+    },
+    {
+      "type": "postoperative",
+      "patterns": [
+        "postoperative",
+        "after the operation"
+      ]
+    },
+    {
+      "type": "admission",
+      "patterns": [
+        "arrived",
+        "admitted",
+        "admission",
+        "arrive",
+        "come",
+        "in",
+        "new"
+      ]
+    },
+    {
+      "type": "discharge",
+      "patterns": [
+        "discharge",
+        "discharged"
+      ]
+    },
+    {
+      "type": "readmission",
+      "patterns": [
+        "readmitted",
+        "returned"
+      ]
+    },
+    {
+      "type": "location_ref",
+      "patterns": [
+        "ward",
+        "BICU",
+        "Intensive Care Unit",
+        "bed",
+        "another ward",
+        "the unit",
+        "the ward",
+        "out of bed",
+        "in theatre"
+      ]
+    },
+    {
+      "type": "staff",
+      "patterns": [
+        "you",
+        "ITRACT team",
+        "we",
+        "other teams"
+      ]
+    }
+  ]
+}
