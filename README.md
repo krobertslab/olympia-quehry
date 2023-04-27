@@ -24,7 +24,7 @@ Two clinical question answering datasets are included in this repository.
 ### FHIR dataset
 
 * Present at [`data/quehry/fhir_annotations.xml`](data/quehry/fhir_annotations.xml)
-* Introduced in [this paper](https://aclanthology.org/L16-1598).
+* Introduced in [this paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7153115/).
 
 ```
 @inproceedings{soni2019using,
